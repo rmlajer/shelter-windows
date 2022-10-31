@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.ResponseCompression;
+using shelterwindows.Server.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +7,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+
+//adding the repository as a service
+builder.Services.AddScoped<IShelterRepository, ShelterRepositoryMongo>();
+
 
 var app = builder.Build();
 
