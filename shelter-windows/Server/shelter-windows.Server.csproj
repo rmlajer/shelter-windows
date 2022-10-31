@@ -23,5 +23,9 @@
   <ItemGroup>
     <None Remove="MongoDB.Bson" />
     <None Remove="MongoDB.Driver" />
+    <None Remove="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>

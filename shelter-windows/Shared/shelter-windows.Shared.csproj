@@ -11,8 +11,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="MongoDB.Bson" />
+    <None Remove="Models\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Bson" Version="2.18.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>
